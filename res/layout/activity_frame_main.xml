@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" 
+        android:background="@drawable/tab_bar_bg">
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/search_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	android:background="@drawable/tab_search" />
+
+            <TextView
+                android:id="@+id/search_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_text_color"
+                android:text="@string/search_txt" 
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_buy_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/goup_buy_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	android:background="@drawable/tab_group_buy" />
+
+            <TextView
+                android:id="@+id/goup_buy_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_text_color"
+                android:text="@string/group_buy_txt" 
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sign_in_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/sign_in_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	android:background="@drawable/tab_sign_in" />
+
+            <TextView
+                android:id="@+id/sign_in_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_text_color"
+                android:text="@string/sign_in_txt" 
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/my_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	android:background="@drawable/tab_my" />
+
+            <TextView
+                android:id="@+id/my_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_text_color"
+                android:text="@string/my_txt" 
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/more_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/more_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	android:background="@drawable/tab_more" />
+
+            <TextView
+                android:id="@+id/more_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_text_color"
+                android:text="@string/more_txt" 
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_layout">
+        
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

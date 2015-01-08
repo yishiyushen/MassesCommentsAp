@@ -4,5 +4,10 @@
     <string name="app_name">MassesCommentsAp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="search_txt">查找</string>
+    <string name="group_buy_txt">团购</string>
+    <string name="sign_in_txt">签到</string>
+    <string name="my_txt">我的</string>
+    <string name="more_txt">更多</string>
 
 </resources>
