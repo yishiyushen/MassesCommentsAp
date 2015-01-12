@@ -50,15 +50,15 @@ public class FragmentViewPagerAdapter extends PagerAdapter implements
 		// TODO Auto-generated method stub
 		//return super.instantiateItem(container, position);
 		Fragment fragment = frgList.get(position);
-		View view = fragment.getView();
+		
 		if(!fragment.isAdded()){
 			FragmentTransaction ft = fragmentManager.beginTransaction();
 			ft.add(fragment,fragment.getClass().getSimpleName());
 			ft.commit();
 			fragmentManager.executePendingTransactions();
 		}
-		
-		if(fragment.getView().getParent() == null){
+		View view = fragment.getView();
+		if(view.getParent() == null){
 			container.addView(view);
 		}
 		

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="tab_layout_id">
+        <item >@id/search_layout</item>
+        <item >@id/group_buy_layout</item>
+        <item >@id/sign_in_layout</item>
+        <item >@id/my_layout</item>
+        <item >@id/more_layout</item>
+    </integer-array>
+</resources>

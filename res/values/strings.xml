@@ -9,5 +9,18 @@
     <string name="sign_in_txt">签到</string>
     <string name="my_txt">我的</string>
     <string name="more_txt">更多</string>
+    <string name="search_txt_hint">商户名，地点等...</string>
+    <string name="good_food">美食</string>
+    <string name="view_spot">景点</string>
+    <string name="hotel">酒店</string>
+    <string name="membership_card">会员卡</string>
+    <string name="member_card_tip">随时随地尊享会员特权</string>
+    <string name="search_hole_city">搜全城</string>
+    <string name="search_hole_city_tip">按商区查询，找遍城市每个角落</string>
+    <string name="ranking">排行榜</string>
+    <string name="ranking_tip">全城最佳，生活宝典</string>
+    <string name="coupon">优惠券</string>
+    <string name="coupon_tip">免费使用，省钱法宝</string>
+    <string name="group_buy_txt_hint">搜索团购</string>
 
 </resources>
