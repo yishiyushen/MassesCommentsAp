@@ -45,7 +45,6 @@ public class StartActivity extends Activity {
 		SharedPreferences preferences = this.getPreferences(Activity.MODE_PRIVATE);
 		Editor editor = preferences.edit();
 		boolean bFlag = preferences.getBoolean(FIRST_RUN, true);
-		bFlag = true;
 		if(bFlag){
 			editor.putBoolean(FIRST_RUN, false);
 		}

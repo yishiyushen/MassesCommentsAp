@@ -21,6 +21,8 @@
                 android:id="@+id/city_name_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+            	android:textColor="@color/my_title_textcolor"
+            	android:textSize="18sp"
                 android:text="北京" />
 
             <ImageView
@@ -33,7 +35,7 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="40dp"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
             android:layout_weight="55"
@@ -45,14 +47,15 @@
             <ImageView
                 android:id="@+id/imageView1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:src="@drawable/ic_search" />
 
             <TextView
                 android:id="@+id/search_txt"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:editable="true"
+                android:gravity="center_vertical"
                 android:hint="@string/search_txt_hint" >
             </TextView>
         </LinearLayout>
@@ -284,6 +287,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/ranking_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" 
                 android:background="@drawable/search_list_bg"
@@ -311,6 +315,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/coupon_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" 
                 android:background="@drawable/search_list_bg"
